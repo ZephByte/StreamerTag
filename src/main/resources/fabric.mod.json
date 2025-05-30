@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "streamertag",
+  "version": "${version}",
+  "name": "StreamerTag",
+  "description": "A simple mod using placeholder to add a streaming tag for streamers.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/streamertag/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.zephbyte.streamertag.StreamerTag"
+    ]
+  },
+  "mixins": [
+    "streamertag.mixins.json",
+    {
+      "config": "streamertag.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
