@@ -12,6 +12,7 @@ object PlaceholderHandler {
         Placeholders.register(Identifier.of(MOD_ID, "status")) { context, _ ->
             val player = context.player
             if (player != null && StreamerTagNbt.getStreamerTagEnabled(player)) {
+                // TODO ZEPH: This is deprecated, will need to come back and update later
                 val parsed = TextParserUtils.formatText(ConfigManager.streamerTagString)
                 PlaceholderResult.value(parsed)
             } else {
