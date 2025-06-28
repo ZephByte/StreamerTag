@@ -4,6 +4,7 @@
   "package": "com.zephbyte.streamertag.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "StreamerTagPlayerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
