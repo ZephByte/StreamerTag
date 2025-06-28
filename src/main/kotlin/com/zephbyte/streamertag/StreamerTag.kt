@@ -8,6 +8,7 @@ class StreamerTag : ModInitializer {
         LOGGER.info("Streamer Tag mod initializing...")
 
         ConfigManager.loadConfig()
+        PlaceholderHandler.registerPlaceholder()
         ModCommands.register()
 
         LOGGER.info("Streamer Tag mod initialized.")
